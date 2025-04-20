@@ -1,14 +1,6 @@
-//
-//  SdelayUITestsLaunchTests.swift
-//  SdelayUITests
-//
-//  Created by Егор Мизюлин on 19.04.2025.
-//
-
 import XCTest
 
 final class SdelayUITestsLaunchTests: XCTestCase {
-
     override class var runsForEachTargetApplicationUIConfiguration: Bool {
         true
     }
