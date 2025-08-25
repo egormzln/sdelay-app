@@ -1,17 +1,19 @@
 import Combine
 import UIKit
 
+// MARK: - Main Screen
 class MainViewController: UIViewController {
     private let viewModel = MainViewModel()
     private var cancellables: Set<AnyCancellable> = []
-
+    
+    // MARK: - UI components
     private lazy var counterLabel: UILabel = {
         let label = UILabel()
         label.translatesAutoresizingMaskIntoConstraints = false
         label.text = "Button pressed 0"
         return label
     }()
-
+    
     private lazy var incrementButton: UIButton = {
         let button = UIButton()
         button.translatesAutoresizingMaskIntoConstraints = false
@@ -35,7 +37,8 @@ class MainViewController: UIViewController {
         stack.spacing = 50
         return stack
     }()
-
+    
+    // MARK: - UI lifecycle
     override func viewDidLoad() {
         super.viewDidLoad()
         configuration()
